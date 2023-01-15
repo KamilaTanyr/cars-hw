@@ -1,0 +1,261 @@
+carsData=[{
+    image: "1.jpg",
+    name: "Lamborgini Hurican Spyder",
+    transmission: "автомат",
+    engine: "5.2 л.с.",
+    year: 2019
+  },
+    {
+      image: "2.jpg",
+      name: "ChevroletCorvette",
+      transmission: "автомат",
+      engine: "6.2 л.с.",
+      year: 2017
+    },
+    {
+      image: "3.jpg",
+      name: "Ferrari California",
+      transmission: "автомат",
+      engine: "3.2 л.с.",
+      year: 2010
+    },
+    {
+      image: "4.jpg",
+      name: "Lamborghini Urus",
+      transmission: "автомат",
+      engine: "4.2 л.с.",
+      year: 2018
+    },
+    {
+      image: "5.jpg",
+      name: "Audi R8",
+      transmission: "автомат",
+      engine: "5.2 л.с.",
+      year: 2019
+    }
+  ];
+
+  iz app component ts
+
+  ---------------------
+  file html
+    <!-- <div class="car-item">
+          <div class="car-item-image">
+            <img src="../assets/images/2.jpg" alt="image 2">
+          </div>
+          <div class="car-item-title">Chevrolet Corvet</div>
+          <div class="car-item-info">
+            <div class="car-item-point">
+              <img src="../assets/images/transmission.png" alt="transmission">
+              <div>Коробка</div>
+              <div>автомат</div>
+            </div>
+            <div class="car-item-point">
+              <img src="../assets/images/ac2.jpg" alt="wheal">
+              <div>Двигатель</div>
+              <div>6.2 л.с.</div>
+            </div>
+            <div class="car-item-point">
+              <img src="../assets/images/year.png" alt="year">
+              <div>Год выпуска</div>
+              <div>2017</div>
+            </div>
+
+          </div>
+          <div class="car-item-action">
+            <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
+          </div>
+        </div>
+
+        <div class="car-item">
+          <div class="car-item-image">
+            <img src="../assets/images/3.jpg" alt="image 3">
+          </div>
+          <div class="car-item-title">Ferrari Californiar</div>
+          <div class="car-item-info">
+            <div class="car-item-point">
+              <img src="../assets/images/transmission.png" alt="transmission">
+              <div>Коробка</div>
+              <div>автомат</div>
+            </div>
+            <div class="car-item-point">
+              <img src="../assets/images/ac2.jpg" alt="wheal">
+              <div>Двигатель</div>
+              <div>3.9 л.с.</div>
+            </div>
+            <div class="car-item-point">
+              <img src="../assets/images/year.png" alt="year">
+              <div>Год выпуска</div>
+              <div>2010</div>
+            </div>
+
+          </div>
+          <div class="car-item-action">
+            <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
+          </div>
+        </div>
+
+        <div class="car-item">
+          <div class="car-item-image">
+            <img src="../assets/images/4.jpg" alt="image 4">
+          </div>
+          <div class="car-item-title">Lamborgini Urus</div>
+          <div class="car-item-info">
+            <div class="car-item-point">
+              <img src="../assets/images/transmission.png" alt="transmission">
+              <div>Коробка</div>
+              <div>автомат</div>
+            </div>
+            <div class="car-item-point">
+              <img src="../assets/images/ac2.jpg" alt="wheal">
+              <div>Двигатель</div>
+              <div>4.0 л.с.</div>
+            </div>
+            <div class="car-item-point">
+              <img src="../assets/images/year.png" alt="year">
+              <div>Год выпуска</div>
+              <div>2019</div>
+            </div>
+          </div>
+          <div class="car-item-action">
+            <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
+          </div>
+        </div>
+
+        <div class="car-item">
+          <div class="car-item-image">
+            <img src="../assets/images/5.jpg" alt="image 5">
+          </div>
+          <div class="car-item-title">Audi R8</div>
+          <div class="car-item-info">
+            <div class="car-item-point">
+              <img src="../assets/images/transmission.png" alt="transmission">
+              <div>Коробка</div>
+              <div>автомат</div>
+            </div>
+            <div class="car-item-point">
+              <img src="../assets/images/ac2.jpg" alt="wheal">
+              <div>Двигатель</div>
+              <div>5.2 л.с.</div>
+            </div>
+            <div class="car-item-point">
+              <img src="../assets/images/year.png" alt="year">
+              <div>Год выпуска</div>
+              <div>2018</div>
+            </div>
+
+          </div>
+          <div class="car-item-action">
+            <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
+          </div>
+        </div>
+
+        <div class="car-item">
+          <div class="car-item-image">
+            <img src="../assets/images/6.jpg" alt="image 6">
+          </div>
+          <div class="car-item-title">Chevrolet Camaro</div>
+          <div class="car-item-info">
+            <div class="car-item-point">
+              <img src="../assets/images/transmission.png" alt="transmission">
+              <div>Коробка</div>
+              <div>автомат</div>
+            </div>
+            <div class="car-item-point">
+              <img src="../assets/images/ac2.jpg" alt="wheal">
+              <div>Двигатель</div>
+              <div>6.0 л.с.</div>
+            </div>
+            <div class="car-item-point">
+              <img src="../assets/images/year.png" alt="year">
+              <div>Год выпуска</div>
+              <div>2019</div>
+            </div>
+          </div>
+          <div class="car-item-action">
+            <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
+          </div>
+        </div>
+
+        <div class="car-item">
+          <div class="car-item-image">
+            <img src="../assets/images/7.png" alt="image 7">
+          </div>
+          <div class="car-item-title">Maserati Quattroporte</div>
+          <div class="car-item-info">
+            <div class="car-item-point">
+              <img src="../assets/images/transmission.png" alt="transmission">
+              <div>Коробка</div>
+              <div>автомат</div>
+            </div>
+            <div class="car-item-point">
+              <img src="../assets/images/ac2.jpg" alt="wheal">
+              <div>Двигатель</div>
+              <div>3.0 л.с.</div>
+            </div>
+            <div class="car-item-point">
+              <img src="../assets/images/year.png" alt="year">
+              <div>Год выпуска</div>
+              <div>2019</div>
+            </div>
+          </div>
+          <div class="car-item-action">
+            <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
+          </div>
+        </div>
+
+        <div class="car-item">
+          <div class="car-item-image">
+            <img src="../assets/images/8.png" alt="image 8">
+          </div>
+          <div class="car-item-title">Dodge Challenger </div>
+          <div class="car-item-info">
+            <div class="car-item-point">
+              <img src="../assets/images/transmission.png" alt="transmission">
+              <div>Коробка</div>
+              <div>автомат</div>
+            </div>
+            <div class="car-item-point">
+              <img src="../assets/images/ac2.jpg" alt="wheal">
+              <div>Двигатель</div>
+              <div>6.4 л.с.</div>
+            </div>
+            <div class="car-item-point">
+              <img src="../assets/images/year.png" alt="year">
+              <div>Год выпуска</div>
+              <div>2019</div>
+            </div>
+          </div>
+          <div class="car-item-action">
+            <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
+          </div>
+        </div>
+
+        <div class="car-item">
+          <div class="car-item-image">
+            <img src="../assets/images/9.png" alt="image 9">
+          </div>
+          <div class="car-item-title">Nissan GT-R </div>
+          <div class="car-item-info">
+            <div class="car-item-point">
+              <img src="../assets/images/transmission.png" alt="transmission">
+              <div>Коробка</div>
+              <div>автомат</div>
+            </div>
+            <div class="car-item-point">
+              <img src="../assets/images/ac2.jpg" alt="wheal">
+              <div>Двигатель</div>
+              <div>4.2 л.с.</div>
+            </div>
+            <div class="car-item-point">
+              <img src="../assets/images/year.png" alt="year">
+              <div>Год выпуска</div>
+              <div>2019</div>
+            </div>
+
+          </div>
+          <div class="car-item-action">
+            <button class="button car-button" (click)="goScroll(price)">Забронировать</button>
+          </div>
+        </div>
+  -->
